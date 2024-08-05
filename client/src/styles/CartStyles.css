@@ -1,0 +1,147 @@
+/* General Styles */
+.cart-page {
+  margin-top: 64px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.cart-page h1 {
+  padding: 15px !important;
+  font-weight: normal;
+  background-color: rgba(0, 0, 255, 0.072) !important;
+  text-align: center;
+}
+
+.cart-page h1 > p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.cart-summary {
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.cart-items-container {
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-color: transparent transparent;
+  overflow-x: hidden;
+  padding-right: 10px;
+  width: 100%;
+}
+
+.Main_cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width:500px;
+}
+
+.cart_product {
+  flex: 0 0 120px;
+  text-align: center;
+}
+
+.cart_product > img {
+  width: 100%;
+  height: auto;
+}
+
+.cart_product_detail {
+  flex: 1;
+  /* border: 1px solid gray; */
+  padding: 10px;
+  text-align: left;
+}
+
+.cart_product_detail > p {
+  margin: 0;
+  font-size: small;
+}
+
+.remove_section {
+  flex: 0 1 50px;
+  text-align: center;
+}
+
+.remove_section > button {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .cart-page h1 {
+    font-size: 1.2em;
+    padding: 10px !important;
+  }
+
+  .cart-page h1 > p {
+    font-size: 0.9em;
+  }
+
+  .cart-summary {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-page h1 {
+    font-size: 1em;
+    padding: 8px !important;
+  }
+
+  .cart-page h1 > p {
+    font-size: 0.8em;
+  }
+
+  .cart-summary {
+    margin-top: 20px;
+  }
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.cart-summary{
+  position: absolute;
+  top:30%;
+  right: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .cart-summary{
+    position:static;
+    align-self: center;
+  }
+
+  .cart-items-container{
+    margin-left: 100px;
+  }
+
+}
+
+@media screen and (max-width: 765px) {
+
+
+  .cart-items-container{
+    margin-left: 0px;
+  }
+
+}

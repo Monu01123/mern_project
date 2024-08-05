@@ -1,0 +1,107 @@
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  width: 100%; 
+  height: 500px; 
+  object-fit: cover;
+}
+
+.card-lower {
+  margin-top: -30px;
+  text-align: left;
+}
+
+.card-lower h5 {
+  margin: 5px 0; 
+  font-size: 1rem; 
+}
+
+/* Responsive text sizes */
+@media (min-width: 576px) {
+  .card-lower h5 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-lower h5 {
+    font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-lower h5 {
+    font-size: 0.8rem;
+  }
+}
+
+.add-to-cart {
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addtocart_btn {
+  border: none;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.337);
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; 
+}
+
+.filters h4 {
+  margin-top: 20px;
+  color: gray !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+
+.filters .ant-checkbox-wrapper,
+.filters .ant-radio-wrapper {
+  margin: 5px 10px;
+}
+
+.filters button {
+  background-color: black;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  margin-top: 20px;
+  color: white;
+}
+
+.loadmore {
+  color: green;
+  font-weight: bold;
+  font-size: 20px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.home-page{
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .home-page{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}

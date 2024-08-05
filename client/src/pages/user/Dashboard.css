@@ -1,0 +1,40 @@
+.profileuser {
+  background-color: #ffffff;
+  padding: 10px;
+  /* border-radius: 8px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  text-align: left;
+  width: 400px;
+  color: rgb(129, 126, 126);
+}
+
+.greet {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  padding-left:10px;
+}
+
+.profile_name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #007bff;
+  padding-left: 30px;
+}
+
+.dashboard {
+  background-color: #f8fcfb;
+}
+
+.content{
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width:400px;
+    font-size: smaller;
+    margin-top: 10px;
+}
