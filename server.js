@@ -30,7 +30,7 @@ app.use("/api/v1/product", productRoutes);
 
 // Serve static files from the React app
 const __dirname = path.resolve();
-app.use(express.static(path.join(__dirname, "client", "build")));
+app.use(express.static(path.join(__dirname, './client/build')));
 // console.log(__dirname);
 
 app.get("*", (req, res) => {
