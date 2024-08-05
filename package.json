@@ -8,7 +8,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix ./client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build":"npm install --legacy-peer-deps && npm run install --prefix frontend && npm run build --prefix client"
   },
   "keywords": [],
   "author": "Techinfoyt",
