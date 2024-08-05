@@ -31,7 +31,7 @@ app.use("/api/v1/product", productRoutes);
 // Serve static files from the React app
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, "client", "build")));
-console.log(__dirname);
+// console.log(__dirname);
 
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
